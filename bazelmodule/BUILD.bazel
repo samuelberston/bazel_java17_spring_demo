@@ -1,5 +1,6 @@
 java_binary (
     name = "BazelModule",
     srcs = glob(["src/main/java/com/sberston/*.java"]),
-    main_class = "com.sberston.BazelModule"
+    main_class = "com.sberston.BazelModule",
+    visibility = ["//bazelapp:__pkg__"]
 )
