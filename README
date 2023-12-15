@@ -2,3 +2,13 @@ This project demonstrates the build for a java microservice using bazel 7, java 
 
 Bazel 7.0
 JDK: coretto 17.0.9
+Base Image: CentOS 7
+Spring framework v6.+
+Spring boot: v3.+
+
+other deps:
+- gRPC/protobuf
+- jackson
+- tomcat embed
+- guava
+- snakeyaml 2.+
