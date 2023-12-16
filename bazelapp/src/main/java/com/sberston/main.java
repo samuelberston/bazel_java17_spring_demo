@@ -1,6 +1,6 @@
 package com.sberston;
 
-import static main.java.com.sberston.BazelModule.variable;
+import static com.sberston.BazelModule.variable;
 
 public class main {
     public static void main(String[] args) {
