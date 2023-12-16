@@ -1,4 +1,4 @@
-package main.java.com.sberston;
+package com.sberston;
 
 import static main.java.com.sberston.BazelModule.variable;
 

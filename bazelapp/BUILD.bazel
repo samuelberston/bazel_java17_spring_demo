@@ -1,9 +1,17 @@
-java_binary (
+#load("//springboot:springboot.bzl", "springboot")
+
+lib_deps = [
+    "//bazelmodule:BazelModule",
+]
+
+springboot_deps = [
+    "@maven//:org_springframework_boot_spring_boot",
+    "@maven//:org_springframework_boot_spring_boot_autoconfigure",
+    "@maven//:org_springframework_boot_spring_boot_starter_web",
+]
+
+java_library (
     name = "BazelApp",
     srcs = glob(["src/main/java/com/sberston/*.java"]),
-    main_class = "com.sberston.BazelApp",
-    deps = ["//bazelmodule:BazelModule",
-            "@maven//:org_springframework_spring_core",
-            "@maven//:org_springframework_boot_spring_boot"
-            ]
+    deps = lib_deps + springboot_deps,
 )

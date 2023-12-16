@@ -1,4 +1,4 @@
-package main.java.com.sberston;
+package com.sberston;
 
 public class BazelModule {
     public static String variable = "Hello World";

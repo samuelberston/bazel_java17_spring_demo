@@ -1,2 +1,3 @@
 .idea
 bazel_java17_spring_demo.iml
+*.iml
