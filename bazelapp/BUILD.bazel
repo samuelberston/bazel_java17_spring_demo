@@ -12,6 +12,6 @@ springboot_deps = [
 
 java_library (
     name = "BazelApp",
-    srcs = glob(["src/main/java/com/sberston/*.java"]),
+    srcs = glob(["src/main/java/**/*.java"]),
     deps = lib_deps + springboot_deps,
 )
